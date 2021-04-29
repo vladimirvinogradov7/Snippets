@@ -1,5 +1,3 @@
-release: python mansage.py collectstatic --noinput
-web: gunicornSnippets.wsgi --log-file -
-web: gunicorn Snippet.wsgi --log-file -
+release: python manage.py collectstatic --noinput
 web: gunicorn Snippts.wsgi --log-file -
 
